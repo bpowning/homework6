@@ -1,13 +1,16 @@
 var video;
+var volume;
 
 window.addEventListener("load", function() {
 	video = document.querySelector("#myVideo");
+	volume = document.querySelector("#volume")
 });
 
 //play video
 document.querySelector("#play").addEventListener("click", function() {
 	console.log("Play Video");
 	video.play();
+	volume.innerHTML = "100%"
 });
 
 //pause video
