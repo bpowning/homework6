@@ -1,4 +1,5 @@
 var video;
+volume.innerHTML = document.querySelector("#volumeSlider").value + "%"
 
 window.addEventListener("load", function() {
 	video = document.querySelector("#myVideo");
